@@ -21,6 +21,7 @@ function Git() {
 
   return (
     <>
+    <div className="grid grid-col-1">
      <p className="flex justify-center pb-16 text-lg ">myuserName = rcmangnale</p>
       <div className="flex justify-center gap-10 pt-24">
        
@@ -37,6 +38,7 @@ function Git() {
           Get User Details
         </button>
       </div>
+      </div>s
     </>
   );
 }
