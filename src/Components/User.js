@@ -38,7 +38,7 @@ function Git() {
           Get User Details
         </button>
       </div>
-      </div>s
+      </div>
     </>
   );
 }
