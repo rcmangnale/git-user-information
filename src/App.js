@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import User from "./Components/User";
+import ShowUserDetails from "./Components/ShowUserDetails";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <>
+      <div className=" h-36">
+        <p className="flex justify-center p-12 text-3xl font-bold text-black bg-sky-500 ">
+          Github User Details
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      </div>
+      <div className="flex justify-center ">
+        <Routes>
+          <Route path="/*" element={<User />}></Route>
+          <Route path="/ShowUserDetails" element={<ShowUserDetails />}></Route>
+        </Routes>
+      </div>
+    </>
   );
 }
 
